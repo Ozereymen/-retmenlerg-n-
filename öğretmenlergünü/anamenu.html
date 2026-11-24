@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6e8">
+  <meta name="description" content="Öğretmenler Günü için sevgiyle hazırlandı.">
+  <title>Öğretmenler Gününüz Kutlu Olsun!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="school-mark" href="#" aria-label="Ana sayfa">
+        <span class="school-mark__icon" aria-hidden="true">✦</span>
+        <span>ÖĞRETMENLER <small>GÜNÜ</small></span>
+      </a>
+      <span class="day-tag"><span aria-hidden="true">♡</span> 24 KASIM · ÖĞRETMENLER GÜNÜ</span>
+    </header>
+
+    <main>
+      <section class="welcome-layout" id="welcome">
+        <div class="welcome-copy">
+          <p class="eyebrow"><span aria-hidden="true">✳</span> İYİ Kİ VARSINIZ, ÖĞRETMENİM</p>
+          <h1>Bir iz bırakır,<br><span>bir ömür</span> aydınlatırsınız.</h1>
+          <p class="intro">Bilginizle yolumuzu, sevginizle kalbimizi aydınlatıyorsunuz. Bu küçük sürpriz, emekleriniz için kocaman bir teşekkür.</p>
+          <div class="teacher-note">
+            <span class="teacher-note__icon" aria-hidden="true">✎</span>
+            <p>Her güzel başlangıcın ardında, ilham veren bir öğretmen vardır.</p>
+          </div>
+        </div>
+
+        <section class="choice-card" aria-labelledby="choice-title">
+          <div class="card-sparkle" aria-hidden="true">✦</div>
+          <span class="card-kicker">SİZE ÖZEL BİR HEDİYE</span>
+          <h2 id="choice-title">Önce sizi<br>biraz tanıyalım.</h2>
+          <p class="choice-question">Cinsiyetiniz nedir?</p>
+          <form id="gift-form">
+            <fieldset class="gender-options">
+              <legend class="visually-hidden">Cinsiyetinizi seçin</legend>
+              <label class="gender-option">
+                <input type="radio" name="gender" value="female" required>
+                <span class="gender-option__emoji" aria-hidden="true">🌷</span>
+                <span>Kadın</span>
+                <span class="gender-option__check" aria-hidden="true">✓</span>
+              </label>
+              <label class="gender-option">
+                <input type="radio" name="gender" value="male">
+                <span class="gender-option__emoji" aria-hidden="true">🌿</span>
+                <span>Erkek</span>
+                <span class="gender-option__check" aria-hidden="true">✓</span>
+              </label>
+            </fieldset>
+            <p class="gender-note">Hediyemiz her öğretmenimiz için farklıdır. Karışıklık olmaması için lütfen cinsiyetinizi seçip devam edin.</p>
+            <button class="continue-button" type="submit">
+              Hediyemi göster <span aria-hidden="true">→</span>
+            </button>
+          </form>
+          <p class="privacy-note"><span aria-hidden="true">♡</span> Seçiminiz yalnızca renkleri belirlemek için kullanılır.</p>
+        </section>
+      </section>
+
+      <section class="gift-view" id="gift-view" aria-labelledby="gift-title" hidden>
+        <div class="flower-burst" id="flower-burst" aria-hidden="true"></div>
+        <div class="floating-quotes" id="floating-quotes" aria-hidden="true"></div>
+        <button class="back-button" id="back-button" type="button"><span aria-hidden="true">←</span> Geri dön</button>
+        <div class="gift-card" id="gift-card">
+          <h2 id="gift-title">Sevgili öğretmenlerimize,<br>Öğretmenler Gününüz kutlu olsun!</h2>
+          <button class="finish-button" id="finish-button" type="button" aria-expanded="false" aria-controls="final-message">Bitir <span aria-hidden="true">♡</span></button>
+          <section class="final-message" id="final-message" aria-live="polite" hidden>
+            <p>Bize verdiğiniz umut ve sevgiyle yaşıyoruz. Her biriniz bizim için çok önemlisiniz. Sizi çok seviyoruz.</p>
+            <p class="final-message__shout">ÖĞRETMENLER GÜNÜNÜZ KUTLU OLSUN!<br>ÖĞRETMENİMİZ OLDUĞUNUZ İÇİN ÇOK MUTLUYUZ!!</p>
+            <button class="finish-button finish-button--return" id="return-button" type="button">Bitir <span aria-hidden="true">↺</span></button>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Sevgiyle hazırlandı <span aria-hidden="true">♡</span></span>
+      <span>Öğretmenler Günü</span>
+    </footer>
+  </div>
+  <details class="settings-menu">
+    <summary class="settings-trigger" aria-label="Görünüm ayarlarını aç veya kapat">
+      <span aria-hidden="true">⚙</span><span>Görünüm ayarları</span>
+    </summary>
+    <div class="settings-panel" aria-label="Görünüm ayarları">
+      <p class="settings-title">Ekranınızı kendinize göre ayarlayın</p>
+      <label class="setting-row" for="large-text">
+        <span><strong>Daha büyük yazı</strong><small>Okumayı kolaylaştırır</small></span>
+        <input id="large-text" type="checkbox">
+      </label>
+      <label class="setting-row" for="high-contrast">
+        <span><strong>Yüksek kontrast</strong><small>Metinleri daha belirgin yapar</small></span>
+        <input id="high-contrast" type="checkbox">
+      </label>
+      <label class="setting-row" for="large-tap-targets">
+        <span><strong>Büyük dokunma alanları</strong><small>Telefonlarda seçimi kolaylaştırır</small></span>
+        <input id="large-tap-targets" type="checkbox">
+      </label>
+    </div>
+  </details>
+</body>
+</html>
